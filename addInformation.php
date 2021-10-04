@@ -59,7 +59,8 @@ session_start();
             </div>
             <div class="mb-2">
                 <label for="history" class="form-label">History</label>
-                <textarea type="text" class="form-control" id="history" name="history" rows="4" cols="50"></textarea>
+                <textarea type="text" class="form-control" id="history" name="history" rows="4" cols="50" maxlength="200"></textarea>
+                <div id="emailHelp" class="form-text">Can fill in 200 words.</div>
             </div>
             <div class="mb-2">
                 <label for="address" class="form-label">Address</label>
