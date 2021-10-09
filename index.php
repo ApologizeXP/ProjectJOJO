@@ -35,6 +35,7 @@ $result = $conn->query($sql);
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="edituser.php"><?php echo $_SESSION['fistname'] . ' ' . $_SESSION['lastname'] ?></a>
                         </li>
+                        
                     <?php
                 }
                     ?>

@@ -100,7 +100,7 @@ if (isset($_POST["search"])) {
             <a href="index.php"><button class="btn btn-primary">HOME</button></a>
             <br>
             <br>
-            <input type="text" class="btn btn-success" value="There are <?php echo $count; ?> Places">
+            <input type="text" class="btn btn-success" value="There are <?php echo $count; ?> Places" readonly>
         </center>
         <br><br>
 
@@ -128,7 +128,7 @@ if (isset($_POST["search"])) {
                             if (isset($_SESSION['username']) && $_SESSION['usergroup']  == 'A') {
                             ?>
                                 <ul class="list-group list-group-flush">
-                                    <a class="btn btn-warning" href="editdata.php?id=<?php echo $row->id; ?>"><button>Edit</button></a>
+                                <a class="btn btn-warning" href="editdata.php?id=<?php echo $row->id; ?>">Edit</a>
                                 </ul>
                                 <ul class="list-group list-group-flush">
                                     <a class="btn btn-danger" href="deletedata.php?id=<?php echo $row->id; ?>">Delete</a>
