@@ -109,10 +109,10 @@ $result = $conn->query($sql);
     <br><br>
 
     <div class="container ">
-        <div class="row row-cols-3 ">
+        <div class="row ">
             <?php
             while ($row = $result->fetch_object()) { ?>
-                <div class="col">
+                <div class="col-sm mb-4">
                     <div class="card" style="width: 20rem;">
                         <img src="images/<?php echo $row->file; ?>" class="card-img-top" alt="img">
                         <div class="card-body">
